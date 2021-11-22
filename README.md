@@ -40,8 +40,11 @@ In a command shell run the selected binary.
 
 ## MasteMind API Endpoints
 
-For testing purpouses, a Postman file is included in forlder ./tests/postman 
+For testing purpouses, a Postman file is included in forlder ./tests/postman
 
+</br></br>
+
+**New Game**
 ```
 POST http://localhost:8080/newgame
 ```
@@ -51,22 +54,27 @@ POST http://localhost:8080/newgame
 |--------|--------|----------------------|
 | 200 Ok | string | Ok. UUID of new game |
 
+</br></br>
 
+**New Round**
 ```
 POST http://localhost:8080/round
 ```
 
-## Request Body
+### Request Body
 
 |Name   |Type    |Description            |
 |-------|--------|-----------------------|
 | id    | string | UUID Id of the game   |
 | guess | string | String to evaluate    |
 
+</br></br>
+
+**Game Status**
 ```
 GET http://localhost:8080/status/{id}
 ```
-## URI Parameters
+### URI Parameters
 
 | Name | in   | Required | Type        | Description |
 |------|------|----------|-------------|-------------|
