@@ -18,3 +18,6 @@ run:
 	go run main.go
 
 all: build-all
+
+docker:
+	docker build -t mastermind:latest .
